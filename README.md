@@ -4,12 +4,14 @@ TinyLang is a small, interpreted programming language developed in C++, and a sm
 - Variable declaration (`let x = 5;`)
 - Print statements (`print(x + 2);`)
 - Arithmetic expressions with `+`, `-`, `*`, `/` and parentheses
+- Full interpretation of code (lexer -> parser -> AST -> interpreter)
 
 ## Features
 
 - Lexer: Converts source code into tokens
 - Parser: Converts tokens into an Abstract Syntax Tree (AST)
 - AST supports assignments, print statements, and binary operations
+- Interpreter: Executes TinyLang program and prints output
 
 ## How to Use
 
@@ -25,10 +27,6 @@ TinyLang is a small, interpreted programming language developed in C++, and a sm
 
 ## Planned Features
 
-As of now, this is still in development, and not fully functional as a programming language. The main goal is to add:
-	- An interpreter to fully execute parsed expressions
-
-Other planned features include:
 - Support for more operators and expression types
 - Variable scoping and block support
 - Functions and return statements
@@ -40,7 +38,7 @@ Other planned features include:
 Tinylang follows a simple compiler/interpreter architecture:
 1. **Lexer**: The lexer reads the source code character by character and groups them into "tokens" (like keywords, identifiers, numbers, operators, etc.)
 2. **Parser**: The parser takes the list of tokens and builds an Abstract Syntax Tree (AST) that represents the structure of the code.
-3. **Interpreter**: The interpreter walks the AST and executes the code (not yet implemented).
+3. **Interpreter**: The interpreter walks the AST and executes the code.
 
 ## Author
 
